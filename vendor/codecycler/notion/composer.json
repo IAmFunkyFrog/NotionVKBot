@@ -1,0 +1,43 @@
+{
+    "name": "codecycler/notion",
+    "description": "Notion PHP SDK",
+    "type": "library",
+    "keywords": [
+        "Codecycler",
+        "Notion"
+    ],
+    "homepage": "https://github.com/codecycler/notion",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastiaan Kloos",
+            "email": "sebastiaan@codecycler.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "illuminate/support": "^6.0|^7.0|^8.0|^9.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.17",
+        "phpunit/phpunit": "^9.5",
+        "spatie/ray": "^1.10",
+        "vimeo/psalm": "^4.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "Notion": "src/"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
