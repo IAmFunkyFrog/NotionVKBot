@@ -1,4 +1,16 @@
 {
+    "name": "stepan-trefilov/notion-vk-bot",
+    "description": "VK bot for Notion.so",
+    "type": "project",
+    "authors": [
+        {
+            "name": "IAmFunkyFrog",
+            "email": "st085873@student.spbu.ru"
+        }
+    ],
+    "autoload": {
+        "files": ["src/Bot.php", "src/DispatcherBase.php", "src/Dispatchers/DatabaseSelectedState/DeletePageFromDatabaseDispatcher.php", "src/Dispatchers/DatabaseSelectedState/PatchDatabaseDispatcher.php", "src/Dispatchers/ErrorDispatcher.php", "src/Dispatchers/InitializedSecretState/GetDatabaseDispatcher.php", "src/Dispatchers/PageAddingState/AddPageDispatcher.php", "src/Dispatchers/PageDeletingState/DeletePageDispatcher.php", "src/Dispatchers/UnitializedState/GetNotionSecretDispatcher.php", "src/KeyboardUtil.php", "src/SessionState.php"]
+    },
     "require": {
         "vkcom/vk-php-sdk": "^5.101",
         "codecycler/notion": "^0.11.0"

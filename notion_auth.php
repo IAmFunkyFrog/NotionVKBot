@@ -1,13 +1,8 @@
 <?php
 
+// FIXME refactor this file
+
 require_once __DIR__ . "/vendor/autoload.php";
-require_once __DIR__ . "/src/SessionState.php";
-require_once __DIR__ . "/src/KeyboardUtil.php";
-require_once __DIR__ . "/src/DispatcherBase.php";
-require_once __DIR__ . "/src/Dispatchers/InitializedSecretState/GetDatabaseDispatcher.php";
-require_once __DIR__ . "/src/Dispatchers/ErrorDispatcher.php";
-require_once __DIR__ . "/src/Dispatchers/UnitializedState/GetNotionSecretDispatcher.php";
-require_once __DIR__ . "/src/Bot.php";
 
 use function NotionVK\KeyboardUtil\getInitializedSecretStateKeyboard;
 use GuzzleHttp\Client;
