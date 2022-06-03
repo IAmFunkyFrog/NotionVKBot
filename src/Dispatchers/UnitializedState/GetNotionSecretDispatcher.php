@@ -8,7 +8,7 @@ class GetNotionSecretDispatcher extends DispatcherBase
 
     const START_WITH = "#авторизоваться";
 
-    public function __construct(string $query)
+    public function __construct()
     {
 
     }

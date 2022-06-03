@@ -22,7 +22,7 @@ abstract class DispatcherBase
         } else if (PatchDatabaseDispatcher::check($query)) {
             return new PatchDatabaseDispatcher($query);
         } else if (GetNotionSecretDispatcher::check($query)) {
-            return new GetNotionSecretDispatcher($query);
+            return new GetNotionSecretDispatcher();
         } else if (DeletePageFromDatabaseDispatcher::check($query)) {
             return new DeletePageFromDatabaseDispatcher($query);
         } else if (AddPageDispatcher::check($query)) {
