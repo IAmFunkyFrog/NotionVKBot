@@ -3,7 +3,6 @@
 require_once __DIR__ . "/vendor/autoload.php";
 
 use NotionVK\Bot\BotServerHandler;
-use NotionVK\Bot\SessionState;
 
 $rawdata = file_get_contents('php://input');
 $data = json_decode($rawdata);
@@ -15,10 +14,6 @@ if (!isset($data->object->message->from_id)) {
 
 session_id($data->object->message->from_id);
 session_start();
-
-if (!isset($_SESSION["state"])) {
-    SessionState::setUnitialized();
-}
 
 $handler = new BotServerHandler();
 $handler->parse($data);
